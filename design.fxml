@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ChoiceBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="638.0" style="-fx-background-color: #999999;" stylesheets="@cipher.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sherby.Controller">
+   <children>
+      <Label fx:id="algorithm" layoutX="50.0" layoutY="45.0" prefHeight="42.0" prefWidth="209.0" text="Type Of Algorithm">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="encryptbutton" layoutX="50.0" layoutY="250.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" text="encrypt">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Button>
+      <Button fx:id="decryptbutton" layoutX="50.0" layoutY="315.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" text="decrypt">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textfield" alignment="CENTER" layoutX="115.0" layoutY="140.0" prefHeight="40.0" prefWidth="400.0" promptText="Type Your Message" style="-fx-background-color: #ffffff;">
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="choicebox" layoutX="390.0" layoutY="47.0" prefWidth="150.0">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </ChoiceBox>
+      <Label fx:id="enceyptedtext" alignment="CENTER" layoutX="206.0" layoutY="377.0" prefHeight="35.0" prefWidth="203.0" text="Encrypted Text">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
